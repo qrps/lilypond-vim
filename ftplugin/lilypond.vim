@@ -19,6 +19,13 @@ setlocal shiftwidth=2
 "
 " some handy key mappings
 "
+"
+" F2 and F3 key mappings for osx 
+map <buffer> <F2> :w<Return>:se makeprg=lilypond\ %<<Return>:make<Return>
+
+" Open with the native pdf viewer
+map <buffer> <F3> :!open %<.pdf &<Return>
+
 " <F4>  save & make and play midi with timidity
 map <buffer> <F4> :w<Return>:se makeprg=lilypond\ -m\ %<<Return>:make<Return>:!timidity %<.midi<Return>
 "
